@@ -1,0 +1,33 @@
+<config>    
+    <modules>
+        <Ooredoo_Helloworld>
+            <version>0.1.0</version>
+        </Ooredoo_Helloworld>
+    </modules>
+    <global>
+        <blocks>
+         <helloworld>
+              <class>Ooredoo_Helloworld_Block</class>
+         </helloworld>
+         </blocks>
+    </global>
+     <frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Ooredoo_Helloworld</module>
+                    <frontName>helloworld</frontName>
+                </args>
+            </helloworld>
+        </routers> 
+        <layout>
+   <updates>
+        <helloworld>
+             <file>test.xml</file>
+         </helloworld>
+    </updates>
+</layout>
+    </frontend>
+    
+</config>
